@@ -10,7 +10,7 @@ function getPosts() {
     setTimeout(function() {
         let output = '';
         posts.forEach((post, index) => {
-            output += `<li>${post.title}</li>`;
+            output += `<li>${post.body}</li>`;
         });
         document.body.innerHTML = output;
     }, 1000);
